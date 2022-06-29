@@ -83,6 +83,10 @@ header a {
   display: inline;
 }
 
+.relative-div {
+  position: relative;
+}
+
 .hero-box {
   background-color: var(--primary);
   color: var(--secondary);
@@ -133,12 +137,12 @@ header a {
   background-color: var(--primary);
   color: var(--secondary);
   position: absolute;
-  top: 31.6%;
-  left: 35.3%;
+  top: 7%;
+  left: 8%;
   display: block;
   margin: 0 auto;
-  width: 28%;
-  height: 33%;
+  width: 78%;
+  height: 98%;
   border: 2px solid var(--secondary);
   border-radius: 7px;
   z-index: 0;
@@ -318,13 +322,6 @@ footer p {
     font-size: 12px;
   }
 
-  .sub-hero-box {
-    top: 35.6%;
-    left: 8.3%;
-    width: 78%;
-    height: 33%;
-  }
-
   button {
     font-size: 20px;
     border-radius: 7px;
@@ -371,13 +368,6 @@ footer p {
 
   .hero-text {
     font-size: 10px;
-  }
-
-  .sub-hero-box {
-    top: 32.6%;
-    left: 8.3%;
-    width: 78%;
-    height: 30%;
   }
 
   button {
@@ -435,13 +425,6 @@ footer p {
 
   .hero-text {
     font-size: 9px;
-  }
-
-  .sub-hero-box {
-    top: 28.6%;
-    left: 8.3%;
-    width: 78%;
-    height: 26%;
   }
 
   button {
