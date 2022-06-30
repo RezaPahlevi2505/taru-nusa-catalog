@@ -184,6 +184,7 @@ button {
   padding: 1.25em 0;
   margin: 1.8em auto;
   box-shadow: 1px 1px 6px var(--secondary);
+  cursor: pointer;
 }
 
 /* HOME > Footer Section */
@@ -245,7 +246,14 @@ footer p {
   margin: 0 0 0 -0.125em;
 }
 
-.sticky-footer img {
+.wa-logo {
+  width: 4%;
+  height: auto;
+  position: relative;
+  margin: 0 0 0 0.1875em;
+}
+
+.wa-logo-home {
   width: 4%;
   height: auto;
   position: relative;
