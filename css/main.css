@@ -68,7 +68,7 @@ header a {
   font-family: "Pompadour Regular";
   font-size: 40px;
   text-align: center;
-  margin: 0 0 0.625em 0 !important;
+  margin: 0 0 0.18em 0 !important;
 }
 
 .hero-section p {
@@ -79,15 +79,23 @@ header a {
   margin: 0 0 1.8em 0;
 }
 
-.hero-section span {
-  display: inline;
+.relative-div img {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  padding: 0.937em 0 0 0;
 }
+
+/* .hero-section span {
+  display: inline;
+} */
 
 .relative-div {
   position: relative;
 }
 
-.hero-box {
+/* .hero-box {
   background-color: var(--primary);
   color: var(--secondary);
   position: relative;
@@ -146,7 +154,7 @@ header a {
   border: 2px solid var(--secondary);
   border-radius: 7px;
   z-index: 0;
-}
+} */
 
 .title-section h1 {
   color: var(--primary);
@@ -175,11 +183,12 @@ button {
   height: auto;
   padding: 1.25em 0;
   margin: 1.8em auto;
+  box-shadow: 1px 1px 6px var(--secondary);
 }
 
 /* HOME > Footer Section */
 footer {
-  padding: 0 0 3.25em 0;
+  padding: 0 0 5.25em 0;
 }
 
 h3 {
@@ -222,17 +231,25 @@ footer p {
   width: 35.6%;
   background-color: var(--primary);
   font-family: "Pompadour Regular";
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
-  padding: 0.3125em 0;
+  padding: 0.625em 0;
   z-index: 10;
 }
 
 .sticky-footer span {
   font-family: "Pompadour Bold";
-  font-size: 16px;
+  font-size: 20px;
   display: inline;
   color: var(--wa-button);
+  margin: 0 0 0 -0.125em;
+}
+
+.sticky-footer img {
+  width: 4%;
+  height: auto;
+  position: relative;
+  margin: 0 0 -0.18em 0.1875em;
 }
 
 .sticky-footer .fa-brands {
@@ -346,6 +363,14 @@ footer p {
   .sticky-footer {
     width: 100%;
   }
+
+  .sticky-footer p {
+    font-size: 16px;
+  }
+
+  .sticky-footer span {
+    font-size: 16px;
+  }
 }
 
 /* Medium-size Smartphone */
@@ -403,6 +428,14 @@ footer p {
   .sticky-footer {
     width: 100%;
   }
+
+  .sticky-footer p {
+    font-size: 14px;
+  }
+
+  .sticky-footer span {
+    font-size: 14px;
+  }
 }
 
 /* Small-size Smartphone */
@@ -459,5 +492,13 @@ footer p {
 
   .sticky-footer {
     width: 100%;
+  }
+
+  .sticky-footer p {
+    font-size: 12px;
+  }
+
+  .sticky-footer span {
+    font-size: 12px;
   }
 }
