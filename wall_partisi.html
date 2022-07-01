@@ -16,9 +16,12 @@
   <body>
     <div class="custom-wrapper">
       <header>
-        <a href="index.html">
-          <p><i class="fa-solid fa-arrow-left"></i> Kembali</p>
-        </a>
+        <div class="header-div"></div>
+        <div class="header-div" id="backButton">
+          <a href="index.html">
+            <p><i class="fa-solid fa-arrow-left"></i> Kembali</p>
+          </a>
+        </div>
       </header>
       <main class="container">
         <div class="title-section">
@@ -126,6 +129,15 @@
           loop: true,
           nav: false,
           items: 1,
+        });
+
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 30) {
+            $("#backButton").addClass("sticky-nav");
+            $("#backButton").removeClass("header-div");
+          } else {
+            $("#backButton").removeClass("sticky-nav");
+          }
         });
 
         var dots = $(".owl-dots").css("position", "absolute").css("bottom", "-0.81em").css("transform", "rotate(-90deg)");

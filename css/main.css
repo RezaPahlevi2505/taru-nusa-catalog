@@ -51,11 +51,33 @@ header img {
 }
 
 /* HEADER CATALOG */
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 27.1875em;
+  width: 35.6%;
+  margin: 0;
+  z-index: 6;
+  box-shadow: 0 0 6px var(--secondary);
+  transition: 0.3s ease;
+}
+
+.header-div {
+  background-color: var(--bg);
+  width: 100%;
+  padding: 1em 0;
+}
+
+#backButton {
+  background-color: var(--bg);
+}
+
 header p {
   color: var(--primary);
   font-family: "Pompadour Regular";
   font-size: 18px;
-  padding: 3.75em 0 1.25em 3.75em;
+  /* padding: 3.75em 0 1.25em 3.75em; */
+  padding: 1em 0 0 3.75em;
 }
 
 header a {
@@ -87,80 +109,16 @@ header a {
   padding: 0.937em 0 0 0;
 }
 
-/* .hero-section span {
-  display: inline;
-} */
-
 .relative-div {
   position: relative;
 }
-
-/* .hero-box {
-  background-color: var(--primary);
-  color: var(--secondary);
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  padding: 0.43em 0.625em 0.625em 0.875em;
-  width: 78%;
-  height: auto;
-  border: 2px solid var(--secondary);
-  border-radius: 7px;
-  z-index: 2;
-}
-
-.small-black-box {
-  background-color: var(--secondary);
-  color: var(--primary);
-  border-radius: 2px;
-  padding: 0 0.375em;
-  width: 35%;
-}
-
-.small-black-box p {
-  font-family: "Poppins";
-  font-size: 10px;
-  width: 50%;
-  display: inline;
-}
-
-.hero-box h2 {
-  font-family: "Pompadour Regular";
-  font-size: 36px;
-  line-height: 1.2;
-  margin: 0.937em 0;
-}
-
-.hero-box span {
-  display: block;
-}
-
-.hero-text {
-  font-family: "Poppins";
-  font-size: 14px;
-  color: var(--secondary);
-}
-
-.sub-hero-box {
-  background-color: var(--primary);
-  color: var(--secondary);
-  position: absolute;
-  top: 7%;
-  left: 8%;
-  display: block;
-  margin: 0 auto;
-  width: 78%;
-  height: 98%;
-  border: 2px solid var(--secondary);
-  border-radius: 7px;
-  z-index: 0;
-} */
 
 .title-section h1 {
   color: var(--primary);
   font-family: "Pompadour Regular";
   font-size: 38px;
   text-align: center;
+  margin: 1.5em 0 0 0;
 }
 
 /* HOME > Button Section */
@@ -183,7 +141,6 @@ button {
   height: auto;
   padding: 1.25em 0;
   margin: 1.8em auto;
-  box-shadow: 1px 1px 6px var(--secondary);
   cursor: pointer;
 }
 
@@ -327,6 +284,11 @@ footer p {
 
 /* Large-size Smartphone */
 @media screen and (max-width: 425px) {
+  .sticky-nav {
+    width: 100%;
+    left: 0;
+  }
+
   .hero-section h1 {
     font-size: 40px;
   }
@@ -383,6 +345,11 @@ footer p {
 
 /* Medium-size Smartphone */
 @media screen and (max-width: 375px) {
+  .sticky-nav {
+    width: 100%;
+    left: 0;
+  }
+
   .hero-section h1 {
     font-size: 35px;
   }
@@ -448,6 +415,11 @@ footer p {
 
 /* Small-size Smartphone */
 @media screen and (max-width: 320px) {
+  .sticky-nav {
+    width: 100%;
+    left: 0;
+  }
+
   .hero-section h1 {
     font-size: 27px;
   }
