@@ -53,7 +53,8 @@ body {
   margin: 0 !important;
 }
 a,
-header a {
+header a,
+.sticky-footer a {
   text-decoration: none;
 }
 .custom-wrapper {
