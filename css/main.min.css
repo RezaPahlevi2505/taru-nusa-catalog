@@ -1,0 +1,363 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
+#backButton,
+.custom-wrapper,
+.header-div {
+  background-color: var(--bg);
+}
+.hero-section h1,
+header p {
+  font-family: "Pompadour Regular";
+  color: var(--primary);
+}
+.relative-div img,
+button,
+header img {
+  display: block;
+  height: auto;
+}
+.hero-section h1,
+.hero-section p,
+.title-section h1,
+footer .fa-brands,
+footer p,
+h3,
+header p {
+  color: var(--primary);
+}
+.hero-section h1,
+.hero-section p,
+.sticky-footer,
+.title-section h1,
+footer p,
+h3 {
+  text-align: center;
+}
+@font-face {
+  font-family: "Pompadour Regular";
+  src: url(pompadour_regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Pompadour Bold";
+  src: url(pompadour_bold.ttf) format("truetype");
+}
+:root {
+  --primary: #ffffff;
+  --secondary: #000000;
+  --bg: #aa4141;
+  --wa-button: #1ca35d;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 !important;
+}
+a,
+header a {
+  text-decoration: none;
+}
+.custom-wrapper {
+  width: 480px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+header img {
+  margin: 0 auto;
+  padding: 2.8em 0 1.5em;
+  width: 18%;
+}
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 27.1875em;
+  width: 35.6%;
+  margin: 0;
+  z-index: 6;
+  box-shadow: 0 0 6px var(--secondary);
+  transition: 0.3s;
+}
+.header-div {
+  width: 100%;
+  padding: 1em 0;
+}
+.catalog-wrapper,
+.sticky-footer,
+button {
+  background-color: var(--primary);
+}
+header p {
+  font-size: 18px;
+  padding: 1em 0 0 3.75em;
+}
+.hero-section h1 {
+  font-size: 40px;
+  margin: 0 0 0.18em !important;
+}
+.hero-section p {
+  font-family: Poppins;
+  font-size: 12px;
+  margin: 0 0 1.8em;
+}
+.button-section,
+.sticky-footer,
+.title-section h1,
+button,
+footer p,
+h3 {
+  font-family: "Pompadour Regular";
+}
+.relative-div img {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.937em 0 0;
+}
+.relative-div {
+  position: relative;
+}
+.title-section h1 {
+  font-size: 38px;
+  margin: 1.5em 0 0;
+}
+.button-section {
+  display: block;
+  font-size: 20px;
+  margin: 2.8em 0;
+}
+button {
+  font-size: 20px;
+  color: var(--secondary);
+  border: 2px solid var(--secondary);
+  border-radius: 7px;
+  width: 60%;
+  padding: 1.25em 0;
+  margin: 1.8em auto;
+  cursor: pointer;
+}
+footer {
+  padding: 0 0 5.25em;
+}
+h3 {
+  font-size: 15px !important;
+}
+footer i {
+  display: flex;
+  justify-content: center;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  padding: 0.625em 0;
+}
+footer .fa-brands {
+  padding: 0 0.43em;
+}
+.sticky-footer .fa-brands,
+.sticky-footer span {
+  color: var(--wa-button);
+}
+footer p {
+  font-size: 11px;
+  padding: 0.625em 0 1.8em;
+}
+.sticky-footer {
+  position: fixed;
+  bottom: 0;
+  margin: 0 auto;
+  width: 35.6%;
+  font-size: 20px;
+  padding: 0.625em 0;
+  z-index: 10;
+}
+.wa-logo,
+.wa-logo-home {
+  width: 4%;
+  position: relative;
+  height: auto;
+}
+.sticky-footer span {
+  font-family: "Pompadour Bold";
+  font-size: 20px;
+  display: inline;
+  margin: 0 0 0 -0.125em;
+}
+.wa-logo {
+  margin: 0 0 0 0.1875em;
+}
+.wa-logo-home {
+  margin: 0 0 -0.18em 0.1875em;
+}
+.sticky-footer p {
+  margin: 0.625em 0;
+}
+.catalog-section {
+  padding: 1.25em 0;
+}
+.catalog-wrapper {
+  width: 77%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 3px solid var(--secondary);
+  border-radius: 7px;
+}
+.catalog-section img {
+  border-radius: 6px;
+  margin: 0 auto;
+}
+.desc-row {
+  margin: 0.625em 0 !important;
+}
+.category-name,
+.value-name {
+  font-family: Poppins;
+  color: var(--secondary);
+  margin: 0.3125em 0 !important;
+}
+.row {
+  --bs-gutter-x: 0 !important;
+}
+.category-name {
+  font-size: 12px;
+}
+.value-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+.owl-dots .active span {
+  background-color: var(--bg) !important;
+  transition: 0.5s;
+}
+.owl-dots span {
+  background-color: var(--primary) !important;
+  transition: 0.5s;
+}
+.catalog-footer {
+  margin: 1.6em 0;
+}
+@media screen and (max-width: 425px) {
+  .sticky-nav {
+    width: 100%;
+    left: 0;
+  }
+  .hero-section h1 {
+    font-size: 40px;
+  }
+  .category-name,
+  .hero-section p,
+  .hero-text {
+    font-size: 12px;
+  }
+  .small-black-box p {
+    font-size: 9px;
+  }
+  .hero-box h2 {
+    font-size: 31px;
+  }
+  button {
+    font-size: 20px;
+    border-radius: 7px;
+  }
+  .sticky-footer p,
+  .sticky-footer span,
+  header p {
+    font-size: 16px;
+  }
+  .title-section h1 {
+    font-size: 34px;
+  }
+  .value-name {
+    font-size: 17px;
+  }
+  .sticky-footer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .sticky-nav {
+    width: 100%;
+    left: 0;
+  }
+  .hero-section h1 {
+    font-size: 35px;
+  }
+  .category-name,
+  .hero-section p,
+  .hero-text {
+    font-size: 10px;
+  }
+  .small-black-box p {
+    font-size: 7px;
+  }
+  .hero-box h2 {
+    font-size: 28px;
+  }
+  button {
+    font-size: 20px;
+    border-radius: 7px;
+  }
+  .sticky-footer p,
+  .sticky-footer span,
+  .value-name,
+  header p {
+    font-size: 14px;
+  }
+  .title-section h1 {
+    font-size: 30px;
+  }
+  .catalog-wrapper {
+    border: 3px solid var(--secondary);
+    border-radius: 4px;
+  }
+  .catalog-section img {
+    border-radius: 5px;
+  }
+  .sticky-footer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .sticky-nav {
+    width: 100%;
+    left: 0;
+  }
+  .hero-section h1 {
+    font-size: 27px;
+  }
+  .hero-section p {
+    font-size: 8px;
+  }
+  .small-black-box p {
+    font-size: 6px;
+  }
+  .hero-box h2 {
+    font-size: 23px;
+  }
+  .category-name,
+  .hero-text {
+    font-size: 9px;
+  }
+  button {
+    font-size: 20px;
+    border-radius: 7px;
+  }
+  .sticky-footer p,
+  .sticky-footer span,
+  .value-name,
+  header p {
+    font-size: 12px;
+  }
+  .title-section h1 {
+    font-size: 26px;
+  }
+  .catalog-wrapper {
+    border: 2px solid var(--secondary);
+    border-radius: 4px;
+  }
+  .catalog-section img {
+    border-radius: 4px;
+  }
+  .sticky-footer {
+    width: 100%;
+  }
+}
